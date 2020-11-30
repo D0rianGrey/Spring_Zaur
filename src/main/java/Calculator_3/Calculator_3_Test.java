@@ -1,8 +1,7 @@
 package Calculator_3;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Scanner;
+import java.text.DecimalFormat;
+import java.util.*;
 
 public class Calculator_3_Test {
 
@@ -81,6 +80,8 @@ public class Calculator_3_Test {
                 }
 
 
+
+
                 String s4 = Arrays.toString(operation);
 //                char ch = s4.strip().charAt(3);
 //                char[] s5 = s4.toCharArray();
@@ -99,9 +100,10 @@ public class Calculator_3_Test {
                 }
             }
 
-            System.out.println("Результат = " + String.format("%.3f", result));
+            System.out.println("Результат = " + new DecimalFormat("0.###").format(result));
         }
         scanner.close();
     }
+    
 
 }
