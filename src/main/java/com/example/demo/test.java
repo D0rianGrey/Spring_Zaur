@@ -1,7 +1,13 @@
 package com.example.demo;
 
+import java.util.Scanner;
+
 public class test {
     public static void main(String[] args) {
-        System.out.println(4-9);
+      Scanner scanner = new Scanner(System.in);
+        while (scanner.hasNext()){
+            String s = scanner.nextLine();
+            System.out.println(s);
+        }
     }
 }
